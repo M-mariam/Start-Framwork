@@ -1,0 +1,62 @@
+<div class="text-center m-auto  ">
+<h1 class="text-[#1e262e] uppercase font-bold text-3xl pt-5 m-auto">portfolio component</h1>
+<div class="inline-flex items-center justify-center w-full">
+    <hr class="w-64 h-2 my-8 bg-[#1e262e]">
+    <span class="absolute  font-medium  -translate-x-1/2 bg-white left-1/2 text-[#1e262e] px-4"><i class="fa-solid fa-star"></i></span>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 gap-8 py-5 px-16">
+    <div class="relative group items-center justify-center overflow-hidden cursor-pointer" (click)="open('../../assets/images/poert1.png')">
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="../../assets/images/poert1.png" alt="">
+        </div> 
+        <div class="absolute inset-0 flex flex-col items-center justify-center text-center bg-[#1abc9c] opacity-0  hover:opacity-75 transition-all duration-75">
+            <i class="fa-solid fa-plus text-white text-6xl"></i>
+        </div>
+    </div>
+    <div class="relative group items-center justify-center overflow-hidden cursor-pointer" (click)="open('../../assets/images/port2.png')">
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="../../assets/images/port2.png"  alt="">
+        </div> 
+        <div class="absolute inset-0 flex flex-col items-center justify-center text-center bg-[#1abc9c] opacity-0  hover:opacity-75 transition-all duration-75">
+            <i class="fa-solid fa-plus text-white text-6xl"></i>
+        </div>
+    </div>
+    <div class="relative group items-center justify-center overflow-hidden cursor-pointer" (click)="open('../../assets/images/port3.png')">
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="../../assets/images/port3.png"  alt="">
+        </div> 
+        <div class="absolute inset-0 flex flex-col items-center justify-center text-center bg-[#1abc9c] opacity-0  hover:opacity-75 transition-all duration-75">
+            <i class="fa-solid fa-plus text-white text-6xl"></i>
+        </div>
+    </div>
+    <div class="relative group items-center justify-center overflow-hidden cursor-pointer" (click)="open('../../assets/images/poert1.png')">
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="../../assets/images/poert1.png" alt="">
+        </div> 
+        <div class="absolute inset-0 flex flex-col items-center justify-center text-center bg-[#1abc9c] opacity-0  hover:opacity-75 transition-all duration-75">
+            <i class="fa-solid fa-plus text-white text-6xl"></i>
+        </div>
+    </div>
+    <div class="relative group items-center justify-center overflow-hidden cursor-pointer" (click)="open('../../assets/images/port2.png')">
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="../../assets/images/port2.png" alt="">
+        </div> 
+        <div class="absolute inset-0 flex flex-col items-center justify-center text-center bg-[#1abc9c] opacity-0  hover:opacity-75 transition-all duration-75">
+            <i class="fa-solid fa-plus text-white text-6xl"></i>
+        </div>
+    </div>
+    <div class="relative group items-center justify-center overflow-hidden cursor-pointer" (click)="open('../../assets/images/port3.png')">
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="../../assets/images/port3.png" alt="">
+        </div> 
+        <div class="absolute inset-0 flex flex-col items-center justify-center text-center bg-[#1abc9c] opacity-0  hover:opacity-75 transition-all duration-75">
+            <i class="fa-solid fa-plus text-white text-6xl"></i>
+        </div>
+    </div>
+</div>
+@if(isClicked==true) 
+{<div class=" absolute top-1/2 start-1/2 translate-x-[-50%]">
+    <img [src]="imgSrc" class="w-[100%] relative" alt="">
+    <i class="fa-solid fa-xmark absolute text-white text-2xl top-1 end-5" (click)="close()"></i>
+</div>}
+</div>
